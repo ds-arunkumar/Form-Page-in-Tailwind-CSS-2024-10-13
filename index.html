@@ -20,99 +20,99 @@
       <div class="w-full text-3xl font-bold text-center mb-4">
         <h1>Form Page in Tailwind CSS</h1>
       </div>
-      <div class="float-left w-full">
-        <form>
-          <p class="float-left w-full mx-auto my-2">
-            <label class="float-left w-2/5" for="username"
+      <div class="flex">
+        <form class="flex gap-y-2 flex-col w-full">
+          <p class="flex flex-row justify-between">
+            <label class="w-2/5" for="username"
               >User Name:<span class="text-red-600">*</span></label
             >
             <input
-              class="float-left w-2/4 ml-4 border border-black"
+              class="w-2/4 border border-black"
               type="text"
               name="username"
               id="username"
               required
             />
           </p>
-          <p class="float-left w-full mx-auto my-2">
-            <label class="float-left w-2/5" for="password"
+          <p class="flex flex-row justify-between">
+            <label class="w-2/5" for="password"
               >Password:<span class="text-red-600">*</span></label
             >
             <input
-              class="float-left w-2/4 ml-4 border border-black"
+              class="w-2/4 border border-black"
               type="password"
               name="password"
               id="password"
               required
             />
           </p>
-          <p class="float-left w-full mx-auto my-2">
-            <label class="float-left w-2/5" for="phone"
+          <p class="flex flex-row justify-between">
+            <label class="w-2/5" for="phone"
               >Mobile:<span class="text-red-600">*</span></label
             >
             <input
-              class="float-left w-2/4 ml-4 border border-black"
+              class="w-2/4 border border-black"
               type="number"
               name="phone"
               id="phone"
               required
             />
           </p>
-          <p class="float-left w-full mx-auto my-2">
-            <label class="float-left w-2/5" for="email"
+          <p class="flex flex-row justify-between">
+            <label class="w-2/5" for="email"
               >Email:<span class="text-red-600">*</span></label
             >
             <input
-              class="float-left w-2/4 ml-4 border border-black"
+              class="w-2/4 border border-black"
               type="email"
               name="email"
               id="email"
               required
             />
           </p>
-          <p class="float-left w-full mx-auto my-2">
-            <label class="float-left w-2/5" for="dob">DOB:</label>
+          <p class="flex flex-row justify-between">
+            <label class="w-2/5" for="dob">DOB:</label>
             <input
-              class="float-left w-2/4 ml-4 border border-black"
+              class="w-2/4 border border-black"
               type="date"
               id="dob"
               name="dob"
             />
           </p>
-          <div class="float-left w-full">
+          <div class="flex w-full flex-col">
             <p class="w-full mb-2">Choose your favorite Web language:</p>
             <p class="flex">
               <input
-                class="float-left ml-4"
+                class="ml-4"
                 type="radio"
                 id="html"
                 name="fav_language"
                 value="HTML"
               />
-              <label class="float-left ml-4" for="html">HTML</label><br />
+              <label class="ml-4" for="html">HTML</label><br />
             </p>
             <p class="flex">
               <input
-                class="float-left ml-4"
+                class="ml-4"
                 type="radio"
                 id="css"
                 name="fav_language"
                 value="CSS"
               />
-              <label class="float-left ml-4" for="css">CSS</label><br />
+              <label class="ml-4" for="css">CSS</label><br />
             </p>
             <p class="flex">
               <input
-                class="float-left ml-4"
+                class="ml-4"
                 type="radio"
                 id="javascript"
                 name="fav_language"
                 value="JavaScript"
               />
-              <label class="float-left ml-4" for="javascript">JavaScript</label>
+              <label class="ml-4" for="javascript">JavaScript</label>
             </p>
           </div>
-          <p class="float-left w-full mx-auto my-2">
+          <p>
             <input
               class="p-2 rounded-lg bg-blue-200 w-24 hover:bg-blue-600 hover:text-white cursor-pointer"
               type="submit"
